@@ -1,160 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Joshua Rudaitis</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Josh</title>
 </head>
-
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                  <div class="portfolio-logo"></div>  
-                  <br>
-                  <span class="mdl-layout__title">Joshua Rudaitis</span>
-                </span>
+<!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Josh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-graduation-cap nav__icon"></i> Qualifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="resume.html">Resume</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="resume.html">Resume</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/lab.gif" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">UF Remote Labs</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                      A custom Remote Laboratory system for UF students.  Currently an ongoing project, with research still being conducted at this time.
-                    </div>
-                    <div style="height: 5%;"></div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="research.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                  <div class="mdl-card__media">
-                      <img class="article-image" src="images/relist.png" border="0" alt="" style="background-color: white">
-                  </div>
-                  <div class="mdl-card__title">
-                      <h2 class="mdl-card__title-text">ReList</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    A native Android shopping list app I made while on study abroad in Denmark.
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi/ReList/blob/master/Mobile%20Application%20Development%20Report.pdf">Read more</a>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/git.png" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">'Rudi'-aliasing</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        An antialiasing project written in both Python and C++.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi/rudi-aliasing">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/git.png" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">RPG</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                      Rudaitis Programmed Game: very basic text-based RPG made in my freetime.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi/RPG">Read more</a>
-                    </div>
-                </div>
-                
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/git.png" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Nasa Image Search</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        A Nasa image tool created as part of a competition.  I was one of the winners :)
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi/cap1NASA">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/git.png" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Embedded Doorbell</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                         A "doorbell" of sorts made in assembly using the Arudino's microprocessor.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi/embeddedDoorbell">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                  <div class="mdl-card__media">
-                      <img class="article-image" src="images/git.png" border="0" alt="">
-                  </div>
-                  <div class="mdl-card__title">
-                      <h2 class="mdl-card__title-text">See More</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                       See more on my github page!
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/joshrudi">Read more</a>
-                  </div>
-              </div>
-            </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Joshua Rudaitis</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
 
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/joshuarudaitis/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/joshrudi/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x=0 y=0 xlink:href="assets/img/perfil.png"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hey, I'm Josh</h1>
+                        <h5 class="home__aka">Seattle, WA</h5>
+                        <h3 class="home__subtitle">Software Engnineer</h3>
+                        <p class="home__description">Nature lover.<br>Tech enthusiast.<br>Burrito connoisseur.</p>
+                        <a href="https://drive.google.com/file/d/1dGaZkNtjZBoqK6s4QxPcrcs5KNZHfXQl/preview" class="button button--flex">
+                            Resume <i class="uil uil-file-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home_scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down homw__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title"> About Me</h2>
+            <span class="section__subtitle">Hi there!</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        A graduate of Computer Engineering from the University of Florida (go gators!) with multple years of industry experience and always looking for opportunities to learn and grow.
+                    </p>
+
+                    <div class="about__info">
+                        <div >
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Years <br> experience </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">02</span>
+                            <span class="about__info-name">Companies <br> worked </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">B.S.</span>
+                            <span class="about__info-name">Computer <br> Engineering </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualifications">
+            <h2 class="section__title">Qualifications</h2>
+            <div class="section__subtitle">My professional journey</div>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">B.S. Computer Engineering</h3>
+                                <span class="qualification__subtitle">University of Florida, Gainesville, FL</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    August 2016 - December 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Study Abroad</h3>
+                                <span class="qualification__subtitle">Technical University of Denmark, Lyngby, Denmark</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Fall 2018
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!--===============================QUALIFICATION 3 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">A.A.</h3>
+                                <span class="qualification__subtitle">St. Petersburg College, St. Petersburg, FL</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012 - 2016
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Engineer II</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+                                </span>
+                                <h5 class="qualification__location">Seattle, WA</h5>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    February 2023 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Software Engineer I</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+                                </span>
+                                <h5 class="qualification__location">Seattle, WA</h5>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    March 2021 - February 2023
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 3 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Engineer Intern</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+                                </span>
+                                <h5 class="qualification__location">Seattle, WA</h5>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    June 2020 - August 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 4 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Software Engineer Intern</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.motorolasolutions.com" target="_blank">Motorola Solutions</a>
+                                </span>
+                                <h5 class="qualification__location">Plantation, FL</h5>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Summer 2018 & Summer 2019
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Professional Portfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--======================== PORTFOLIO 1 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.gif" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Remote Labs Research</h3>
+                            <p class="portfolio__description">
+                                A Reproducible Solution for Implementing Online Laboratory Systems Through Inexpensive and Open-source Technology.
+                            </p>
+                            <a href="https://peer.asee.org/34043" class="button button--flex button--small portfolio__button">
+                                Read here
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 2 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Windows Sandbox</h3>
+                            <p class="portfolio__description">
+                                Key maintainer of the composition for the Container OS SKU that runs Microsoft container applications such as Windows Sandbox and Microsoft Defender Application Guard.
+                            </p>
+                            <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview" class="button button--flex button--small portfolio__button">
+                                More info
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--============ Add Arrows =============-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!--============ Add Pagination =============-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== PAPERS ====================-->
+        <section class="papers section" id="papers">
+            
+        </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h5 class="footer__title">Josh</h5>
+                    <span class="footer__subtitle">Software Engineer</span>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/joshuarudaitis" target="_blank" class="footer__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/joshrudi" target="_blank" class="footer__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
